@@ -1,0 +1,48 @@
+{
+  "snacks": [{
+      "id": "101",
+      "quant": "5",
+      "name": "chips"
+    },
+    {
+      "id": "234",
+      "quant": "10",
+      "name": "popcorn"
+    },
+    {
+      "id": "349",
+      "quant": "15",
+      "name": "gum"
+    },
+    {
+      "id": "469",
+      "quant": "8",
+      "name": "icecream"
+    },
+    {
+      "id": "534",
+      "quant": "7",
+      "name": "pretzels"
+    },
+    {
+      "id": "699",
+      "quant": "22",
+      "name": "crackers"
+    },
+    {
+      "id": "732",
+      "quant": "3",
+      "name": "cookies"
+    },
+    {
+      "id": "881",
+      "quant": "24",
+      "name": "candy"
+    },
+    {
+      "id": "910",
+      "quant": "6",
+      "name": "trailmix"
+    }
+  ]
+}

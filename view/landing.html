@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Inventory Management App</title>
+  <link rel="stylesheet" href="../styles/landing.css">
+</head>
+
+<body>
+  <div class="content">
+    <h1>PT1IM</h1>
+    <h2>The Inventory Management App</h2>
+    <a href="main.html">
+      <h3>Click here to enter</h3>
+    </a>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function() {
+
+    $.getJSON('../data.json', function(data) {
+      sessionStorage.setItem("db", JSON.stringify(data));
+
+      function transaction(name, amount) {
+        this.name = name,
+          this.amount = amount
+      }
+      let trans1 = new transaction("chips", 5);
+      let trans2 = new transaction("popcorn", 10);
+      let trans3 = new transaction("gum", 15);
+      let trans4 = new transaction("icecream", 8);
+      let trans5 = new transaction("pretzels", 7);
+      let trans6 = new transaction("crackers", 22);
+      let trans7 = new transaction("cookies", 3);
+      let trans8 = new transaction("candy", 24);
+      let trans9 = new transaction("trailmix", 6);
+      let trans = [trans1, trans2, trans3, trans4, trans5, trans6, trans7, trans8, trans9];
+      sessionStorage.setItem("trans", JSON.stringify(trans));
+    });
+  });
+  </script>
+
+</body>
+
+</html>
