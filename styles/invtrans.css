@@ -1,0 +1,41 @@
+body {
+  background-image: url("../imgs/background.jpeg");
+  background-size: 100% 100%;
+}
+
+body {
+  background-color: grey;
+}
+
+h1 {
+  font-family: 'Cinzel', serif;
+  color: white;
+}
+
+h2 {
+  font-family: 'Cinzel', serif;
+  color: white;
+}
+
+#transactions {
+  font-family: 'Cinzel', serif;
+  color: white;
+  text-align: center;
+  color: white;
+  border: 1px solid white;
+}
+
+table, th, td {
+  font-family: 'Cinzel', serif;
+  text-align: center;
+  color: white;
+  border: 1px solid white;
+}
+
+table {
+  visibility: hidden;
+}
+
+button {
+  font-family: 'Cinzel', serif;
+}

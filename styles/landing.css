@@ -8,5 +8,22 @@ div {
 }
 
 body {
-  background-color: grey;
+  background-image: url("../imgs/background.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+h1{
+  font-family: 'Cinzel', serif;
+  color: white;
+}
+
+h2{
+  font-family: 'Cinzel', serif;
+  color: white;
+}
+
+h3{
+  font-family: 'Cinzel', serif;
+  color: white;
 }

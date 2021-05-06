@@ -61,6 +61,7 @@ function removeItem() {
 }
 
 function viewInv() {
+  document.getElementById("inventory").style.visibility = "visible";
   document.getElementById("chips").innerHTML = JSON.parse(sessionStorage.getItem("db")).snacks[0].name + "-" + JSON.parse(sessionStorage.getItem("db")).snacks[0].quant;
   document.getElementById("popcorn").innerHTML = JSON.parse(sessionStorage.getItem("db")).snacks[1].name + "-" + JSON.parse(sessionStorage.getItem("db")).snacks[1].quant
   document.getElementById("gum").innerHTML = JSON.parse(sessionStorage.getItem("db")).snacks[2].name + "-" + JSON.parse(sessionStorage.getItem("db")).snacks[2].quant
@@ -73,13 +74,14 @@ function viewInv() {
 }
 
 function viewTrans() {
-  let transHTML = "";
+  document.getElementById("transactions").style.visibility = "visible";
+  let transHTML = "<tr><th>Transactions</th></tr>";
   let trans = JSON.parse(sessionStorage.getItem("trans"));
   for (let i = 0; i < trans.length; i++) {
     if (trans[i].amount > 0) {
-      transHTML += trans[i].name + ": +" + trans[i].amount + "  <br>"
+      transHTML += "<tr>" + "<td>" + trans[i].name + ": +" + trans[i].amount + "  </td></tr>"
     } else {
-      transHTML += trans[i].name + ": " + trans[i].amount + "  <br>"
+      transHTML += "<tr>" + "<td>" + trans[i].name + ": " + trans[i].amount + "  </td></tr>"
     }
   }
   document.getElementById("transactions").innerHTML = transHTML;

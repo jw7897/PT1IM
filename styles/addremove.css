@@ -1,6 +1,8 @@
 body {
-  background-color: grey;
+  background-image: url("../imgs/background.jpeg");
+  background-size: 100% 100%;
 }
+
 
 div {
   display: flex;
@@ -9,4 +11,21 @@ div {
   align-items: center;
   text-align: center;
   min-height: 100vh;
+  color: white;
+}
+
+h1{
+  font-family: 'Cinzel', serif;
+}
+
+label{
+  font-family: 'Cinzel', serif;
+}
+
+button {
+  font-family: 'Cinzel', serif;
+}
+
+select{
+  font-family: 'Cinzel', serif;
 }
